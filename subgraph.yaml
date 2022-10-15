@@ -1,4 +1,7 @@
 specVersion: 0.0.4
+description: fameladysquad NFT subgraph workshop
+features:
+  - ipfsOnEthereumContracts
 schema:
   file: ./schema.graphql
 dataSources:
