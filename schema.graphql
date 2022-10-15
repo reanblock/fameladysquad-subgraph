@@ -1,0 +1,16 @@
+type Lady @entity {
+  id: ID!
+  tokenID: BigInt!
+  tokenURI: String! 
+  owner: User
+  name: String 
+  faceExpression: String
+  hairStyle: String
+  skinColor: String
+  eyeColor: String
+}
+
+type User @entity {
+  id: ID! # wallet address 
+  Ladies: [Lady!] @derivedFrom(field: "owner")
+}
